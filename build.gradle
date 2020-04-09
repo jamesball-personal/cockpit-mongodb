@@ -1,0 +1,23 @@
+plugins {
+    id "org.springframework.boot" version "2.2.6.RELEASE"
+    id "io.spring.dependency-management" version "1.0.9.RELEASE"
+    id "java"
+}
+
+group = "com.jamesball"
+version = "1.0-SNAPSHOT"
+sourceCompatibility = "11"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: "org.springframework.boot", name: "spring-boot-starter"
+    implementation group: "org.springframework.boot", name: "spring-boot-starter-test"
+    implementation group: "org.springframework.boot", name: "spring-boot-starter-data-mongodb"
+}
+
+test {
+    useJUnitPlatform()
+}
